@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/contact.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Driving school - Contact</title>
   </head>
@@ -13,9 +13,9 @@
     <div class="nav">
       <div class="nav__logo">
         <a href="./index.html" class="logo__left">
-          <img src="../images/logo.png" alt="logo" />
+          <img src="./images/logo.png" alt="logo" />
         </a>
-        <a href="../index.html" class="logo__right">
+        <a href="./index.html" class="logo__right">
           <h2>.driviati</h2>
           <h3>Driving school</h3>
         </a>
@@ -24,21 +24,21 @@
         <a href="../index.html" class="link_first">Home</a>
 
         <div class="about">
-          <a href="#">About us</a>
+          <a href="./about.html">About us</a>
           <i class="fa-solid fa-angle-down about-btn" id="about-btn"></i>
           <div class="about__hover">
-            <a href="../pages/single-lesson.html" style="color: #31d8da">Single Lesson</a>
+            <a href="./single-lesson.html" style="color: #31d8da">Single Lesson</a>
             <a href="./careers.html">Careers</a>
           </div>
         </div>
         <div class="mobile-about__hover">
-          <a href="../pages/single-lesson.html">Single Lesson</a>
+          <a href="./single-lesson.html">Single Lesson</a>
           <a href="./careers.html">Careers</a>
         </div>
         <a href="./lessons.html">Lessons</a>
         <a href="./pricing.html">Pricing</a>
         <a href="./gallery.html">Gallery</a>
-        <a href="../pages/contact.html" class="contact-link">Contact us</a>
+        <a href="./contact.html" class="contact-link">Contact us</a>
       </div>
       <div class="nav__menu">
         <span></span>
@@ -129,21 +129,28 @@
     <!-- CALL -->
     <div class="call">
       <i class="call_phone call__icon fa-solid fa-phone"></i>
+      <!-- Call Inside -->
       <div class="call__hidden">
         <i class="user fa-regular fa-circle-user"></i>
         <h3>John Smith</h3>
         <p>agent</p>
+        <!-- Number -->
         <div class=".call__hidden__number">
-          <i class="fa-solid fa-phone"></i>
-          +112233445566
+          <i class="fa-solid fa-phone"></i>+355684822122
         </div>
-        <i class="arrow fa-solid fa-angle-down"></i>
-        <div class="call__hiden__socials"></div>
+        <!-- Call Inside Socials -->
+        <div class="call__hidden__socials">
+          <a href="https://telegram.me/tarmanau" target="_blank"><i class="fa-brands fa-telegram" style="color: #29a1d3;"></i></a>
+          <a href="https://wa.me/0684022122" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #26d367;"></i></a>
+          <a href="viber://chat/?number=%2B+355684822122" target="_blank"><i class="fa-brands fa-viber" style="color: #665cac;"></i></a>
+          <a href="https://www.messenger.com/t/jack.malbon.3" target="_blank"><i class="fa-brands fa-facebook-messenger" style="color: #26a0ff;"></i></a>
+        </div>
         <!-- Call Close menu -->
         <div class="call__hidden__closebtn" id="closebtn">
           <span></span>
           <span></span>
         </div>
+        <i class="arrow fa-solid fa-angle-down"></i>
       </div>
     </div>
     <!-- CALL END -->
@@ -153,7 +160,7 @@
         <div class="footer__col1">
           <div class="footer__col1__logo">
             <a href="./index.html" class="footer__col1__logo__left">
-              <img src="../images/logo.png" alt="logo" />
+              <img src="./images/logo.png" alt="logo" />
             </a>
             <a href="./index.html" class="footer__col1__logo__right">
               <h2>.driviati</h2>
@@ -177,12 +184,12 @@
             <h2>Quick Links</h2>
           </div>
           <div class="footer__col2__links">
-            <a href="#"><i class="fa-solid fa-angle-right"></i> Home</a>
-            <a href="#"><i class="fa-solid fa-angle-right"></i> About us</a>
-            <a href="#"><i class="fa-solid fa-angle-right"></i> Lessons</a>
-            <a href="#"><i class="fa-solid fa-angle-right"></i> Tesitmonials</a>
-            <a href="#"><i class="fa-solid fa-angle-right"></i> FAQ</a>
-            <a href="#"><i class="fa-solid fa-angle-right"></i> Contacts</a>
+            <a href="./index.html"><i class="fa-solid fa-angle-right"></i> Home</a>
+            <a href="./about.html"><i class="fa-solid fa-angle-right"></i> About us</a>
+            <a href="./single-lesson.html"><i class="fa-solid fa-angle-right"></i> Single lesson</a>
+            <a href="./careers.html"><i class="fa-solid fa-angle-right"></i> Careers</a>
+            <a href="./lessons.html"><i class="fa-solid fa-angle-right"></i> Lessons</a>
+            <a href="./contact.html"><i class="fa-solid fa-angle-right"></i> Contacts</a>
           </div>
         </div>
         <div class="footer__col3">
@@ -219,7 +226,7 @@
       </div>
     </footer>
 
-    <script src="../script/contact.js"></script>
-    <script src="../script/call.js"></script>
+    <script src="./script/contact.js"></script>
+    <script src="./script/call.js"></script>
   </body>
 </html>
