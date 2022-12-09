@@ -7,26 +7,26 @@ let user = document.querySelector(".user");
 let arrow = document.querySelector(".arrow");
 
 openbtn.addEventListener("click", () => {
-    call.style.width = "270px";
-    call.style.height = "220px";
-    phone_icon.style.display = "none";
-    hidden.style.display = "flex";
-    setTimeout(() => {
-      user.style.opacity = "1";
+  call.style.width = "270px";
+  call.style.height = "220px";
+  phone_icon.style.display = "none";
+  hidden.style.display = "flex";
+  setTimeout(() => {
+    user.style.opacity = "1";
   }, 100);
-    setTimeout(() => {
-      arrow.style.opacity = "1";
+  setTimeout(() => {
+    arrow.style.opacity = "1";
   }, 200);
+  openbtn.style.display = "none";
 });
 
 close_btn.addEventListener("click", () => {
-  console.log("hi");
   call.style.height = "80px";
-  setTimeout(()=>{
-      call.style.width = "80px";
-  }, 80)
+  setTimeout(() => {
+    call.style.width = "80px";
+  }, 80);
   phone_icon.style.display = "block";
   hidden.style.display = "none";
-  user.style.opacity = '0'
-  arrow.style.opacity = '0'
+  user.style.opacity = "0";
+  arrow.style.opacity = "0";
 });

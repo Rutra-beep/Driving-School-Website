@@ -559,14 +559,14 @@ a {
 }
 
 .call__hidden h3 {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 100;
   margin: 0;
   margin-top: 10px;
 }
 
 .call__hidden p {
-  font-size: 15px;
+  font-size: 13px;
   color: gray;
   margin: 0;
   margin-bottom: 10px;
@@ -575,13 +575,16 @@ a {
 .call__hidden div {
   display: flex;
   align-items: center;
+  color: #828282;
+  font-size: 13px;
+  letter-spacing: 1;
 }
 
 .call__hidden div i {
   cursor: pointer;
-  font-size: 12px;
+  font-size: 10px;
   color: gray;
-  margin-right: 10px;
+  margin-right: 6px;
 }
 
 .call__hidden__closebtn {
@@ -628,9 +631,6 @@ a {
     height: 70px;
     bottom: 45px;
     left: 15px;
-  }
-  .call i {
-    font-size: 35px;
   }
 }
 
