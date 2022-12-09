@@ -250,3 +250,34 @@
         }
     }
 }
+@media (max-width: 500px){
+    .testimonials{
+        padding: 120px 0;
+        &__testimonials{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+
+            &__testimonial{
+                width: calc(95% - 40px);
+                height: 170px;
+                padding: 30px 20px;
+
+                &__left{
+                    i{
+                        font-size: 40px;
+                    }
+                }
+                &__right{
+                    p{
+                        font-size: 13px;
+                    }
+                    h2{
+                        font-size: 20px;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
