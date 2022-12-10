@@ -8,14 +8,14 @@
 
   display: flex;
   align-self: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 15%;
 
   &__logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 5%;
+    margin-left: 5%;
     gap: 20px;
 
     .logo__left {
@@ -39,8 +39,7 @@
   &__links {
     display: flex;
     align-items: center;
-    padding-right: 5%;
-    gap: 70px;
+    gap: 60px;
     z-index: 2;
     transform-origin: top;
 
@@ -215,10 +214,48 @@
 }
 
 //  BIG SCREENS
+@media (min-width: 1600px) {
+  .nav {
+    width: calc(100% - 20%);
+    padding: 0 10%;
+    justify-content: space-between;
+    &__logo {
+      margin-left: 0;
+    }
+    &__links{
+      margin: 0;
+    }
+  }
+}
+
 @media only screen and (max-width: 1400px) {
   .nav {
+    width: calc(100% - 120px);
+    padding: 0 60px;
+    gap: 0;
+    justify-content: space-between;
     &__links {
       gap: 40px;
+    }
+
+    &__logo {
+      margin-left: 0 !important;
+    }
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .nav {
+    width: calc(100% - 40px);
+    height: 100px;
+    padding: 0 20px;
+
+    &__links {
+      gap: 35px;
+      a {
+        font-size: 13px;
+      }
     }
   }
 }
@@ -258,16 +295,15 @@
         display: flex;
         align-items: center;
       }
-
     }
     .about:hover .about__hover {
       display: none;
     }
     .about:hover i {
-        color: white;
+      color: white;
     }
     .about-btn:hover .about-link {
-        background-color: red !important;
+      background-color: red !important;
     }
     .about {
       width: 100%;
@@ -285,7 +321,7 @@
         color: white;
         margin-right: 30px;
         font-size: 15px;
-    }
+      }
     }
     &__logo {
       position: absolute;
@@ -334,5 +370,39 @@
         }
       }
     }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .section-header {
+    height: 100vh;
+
+    &__content {
+      width: 100%;
+      margin-top: 100px;
+      gap: 10px;
+
+      h1 {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+  .nav {
+    &__logo {
+      left: 15px;
+    }
+    &__menu {
+      right: 30px;
+    }
+    .about {
+      i {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .about-section {
+    margin-bottom: 350px;
   }
 }

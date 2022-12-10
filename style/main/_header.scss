@@ -6,14 +6,14 @@
 
   display: flex;
   align-self: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 15%;
 
   &__logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 5%;
+    margin-left: 5%;
     gap: 20px;
 
     .logo__left {
@@ -33,18 +33,19 @@
   }
 
   &__links {
+    // width: max-content;
     display: flex;
     align-items: center;
-    padding-right: 5%;
-    gap: 70px;
+    justify-content: center;
+    gap: 60px;
     z-index: 2;
     transform-origin: top;
 
-    .link_first{
+    .link_first {
       color: #31d8da;
     }
 
-    &.open-nav__links{
+    &.open-nav__links {
       height: 350px;
       bottom: -370px;
     }
@@ -59,7 +60,7 @@
       &:hover {
         color: #31d8da;
       }
-    } 
+    }
 
     .about {
       cursor: pointer;
@@ -87,10 +88,10 @@
 
       &:hover .about__hover {
         display: flex;
-    
+
         a {
           color: gray;
-    
+
           &:hover {
             color: #31d8da;
           }
@@ -222,18 +223,26 @@
 //  BIG SCREENS
 @media (min-width: 1600px) {
   .nav {
+    width: calc(100% - 20%);
+    padding: 0 10%;
+    justify-content: space-between;
     &__logo {
-      padding-left: 15%;
-    }
-    &__links {
-      padding-right: 15%;
+      margin-left: 0;
     }
   }
 }
 @media only screen and (max-width: 1400px) {
   .nav {
+    width: calc(100% - 120px);
+    padding: 0 60px;
+    gap: 0;
+    justify-content: space-between;
     &__links {
       gap: 40px;
+    }
+
+    &__logo {
+      margin-left: 0;
     }
   }
   .section-header {
@@ -241,17 +250,20 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 1200px) {
   .nav {
-    &__logo {
-      padding-left: 10%;
-    }
+    width: calc(100% - 40px);
+    padding: 0 20px;
+    top: 50px;
+
     &__links {
-      padding-right: 10%;
+      gap: 35px;
+      a {
+        font-size: 13px;
+      }
     }
   }
 }
-
 
 //  MEDIUM SCREENS
 @media only screen and (max-width: 1000px) {
@@ -269,11 +281,11 @@
       justify-content: space-around;
       gap: 0;
 
-      .link_first{
+      .link_first {
         background-color: #31d8da;
         color: white;
 
-        &:hover{
+        &:hover {
           color: white;
         }
       }
@@ -288,10 +300,10 @@
 
       .about:hover .about__hover {
         display: none;
-    
+
         a {
           color: gray;
-    
+
           &:hover {
             color: #31d8da;
           }
@@ -377,8 +389,8 @@
     &__menu {
       right: 30px;
     }
-    .about{
-      i{
+    .about {
+      i {
         font-size: 18px;
       }
     }

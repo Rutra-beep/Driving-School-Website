@@ -409,7 +409,7 @@ footer .footer__copyright h3 {
   z-index: 12;
   display: flex;
   align-self: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: 15%;
 }
 
@@ -417,7 +417,7 @@ footer .footer__copyright h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 5%;
+  margin-left: 5%;
   gap: 20px;
 }
 
@@ -442,8 +442,7 @@ footer .footer__copyright h3 {
 .nav__links {
   display: flex;
   align-items: center;
-  padding-right: 5%;
-  gap: 70px;
+  gap: 60px;
   z-index: 2;
   transform-origin: top;
 }
@@ -617,9 +616,46 @@ footer .footer__copyright h3 {
   border-radius: 100px;
 }
 
+@media (min-width: 1600px) {
+  .nav {
+    width: calc(100% - 20%);
+    padding: 0 10%;
+    justify-content: space-between;
+  }
+  .nav__logo {
+    margin-left: 0;
+  }
+  .nav__links {
+    margin: 0;
+  }
+}
+
 @media only screen and (max-width: 1400px) {
+  .nav {
+    width: calc(100% - 120px);
+    padding: 0 60px;
+    gap: 0;
+    justify-content: space-between;
+  }
   .nav__links {
     gap: 40px;
+  }
+  .nav__logo {
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav {
+    width: calc(100% - 40px);
+    height: 100px;
+    padding: 0 20px;
+  }
+  .nav__links {
+    gap: 35px;
+  }
+  .nav__links a {
+    font-size: 13px;
   }
 }
 
@@ -678,7 +714,7 @@ footer .footer__copyright h3 {
   }
   .nav .about i {
     position: absolute;
-    right: 15px;
+    right: 10px;
     color: white;
     margin-right: 30px;
     font-size: 15px;
@@ -719,6 +755,33 @@ footer .footer__copyright h3 {
 @media only screen and (max-width: 1000px) and (max-width: 400px) {
   .nav .about i {
     font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .section-header {
+    height: 100vh;
+  }
+  .section-header__content {
+    width: 100%;
+    margin-top: 100px;
+    gap: 10px;
+  }
+  .section-header__content h1 {
+    width: 100%;
+    margin: 0;
+  }
+  .nav__logo {
+    left: 15px;
+  }
+  .nav__menu {
+    right: 30px;
+  }
+  .nav .about i {
+    font-size: 18px;
+  }
+  .about-section {
+    margin-bottom: 350px;
   }
 }
 
