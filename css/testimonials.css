@@ -342,8 +342,20 @@ a {
   display: flex;
   align-items: center;
   color: #828282;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 1;
+}
+
+.call__hidden div a {
+  color: gray;
+}
+
+.call__hidden div a:hover {
+  color: #31d8da;
+}
+
+.call__hidden div a:hover i {
+  color: #31d8da;
 }
 
 .call__hidden div i {

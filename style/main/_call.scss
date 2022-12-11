@@ -33,10 +33,11 @@
   justify-content: center;
   align-items: center;
 
-  i {
+    i {
     font-size: 40px;
     color: #31d8da;
   }
+
 
   &__hidden {
     position: relative;
@@ -120,9 +121,18 @@
       display: flex;
       align-items: center;
       color: #828282;
-      font-size: 13px;
+      font-size: 15px;
       letter-spacing: 1;
 
+      a{
+        color: gray;
+        &:hover{
+          color: #31d8da;
+        }
+        &:hover i{
+          color: #31d8da;
+        }
+      }
       i {
         cursor: pointer;
         font-size: 10px;

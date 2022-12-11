@@ -69,7 +69,7 @@
       font-size: 17px;
     }
     i {
-        font-size: 15px;
+      font-size: 15px;
       color: #31d8da;
       font-weight: bold;
     }
@@ -92,7 +92,7 @@
 @media only screen and (max-width: 1100px) {
   .about-section {
     height: 500px;
-    padding: 10% 0;
+    padding: 50px 0;
     grid-template-columns: 45% 32%;
 
     &__right {
@@ -110,11 +110,11 @@
   }
 }
 @media only screen and (max-width: 1000px) {
-    .about-section {
-        padding: 10% 0;
-        grid-template-columns: 45% 32%;
+  .about-section {
+    padding: 10% 0;
+    grid-template-columns: 45% 32%;
 
-    &__left {
+    &__right {
       h4 {
         font-size: 16px;
       }
@@ -122,15 +122,12 @@
         font-size: 13px;
       }
     }
-    &__right {
-      img {
-        height: 340px;
-      }
-    }
   }
 }
 @media only screen and (max-width: 900px) {
   .about-section {
+    height: 800px;
+    padding: 7% 0;
     grid-template-columns: 1fr;
 
     &__left {
@@ -144,12 +141,30 @@
         line-height: 1.6;
       }
     }
+    &__right {
+      width: calc(100% - 30px);
+      padding-left: 30px;
+    }
   }
 }
 
 // SMALL SCREENS
 @media only screen and (max-width: 600px) {
   .about-section {
-    padding: 5% 10px;
+
+    &__right {
+      width: calc(100% - 10px);
+      padding-left: 10px;
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .about-section {
+    height: 350px;
+
+    &__right {
+      width: calc(100% - 10px);
+      padding-left: 10px;
+    }
   }
 }

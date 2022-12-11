@@ -134,8 +134,20 @@ a {
   display: flex;
   align-items: center;
   color: #828282;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 1;
+}
+
+.call__hidden div a {
+  color: gray;
+}
+
+.call__hidden div a:hover {
+  color: #31d8da;
+}
+
+.call__hidden div a:hover i {
+  color: #31d8da;
 }
 
 .call__hidden div i {
@@ -881,7 +893,7 @@ footer .footer__copyright h3 {
 @media only screen and (max-width: 1100px) {
   .about-section {
     height: 500px;
-    padding: 10% 0;
+    padding: 50px 0;
     grid-template-columns: 45% 32%;
   }
   .about-section__right h1 {
@@ -901,19 +913,18 @@ footer .footer__copyright h3 {
     padding: 10% 0;
     grid-template-columns: 45% 32%;
   }
-  .about-section__left h4 {
+  .about-section__right h4 {
     font-size: 16px;
   }
-  .about-section__left p {
+  .about-section__right p {
     font-size: 13px;
-  }
-  .about-section__right img {
-    height: 340px;
   }
 }
 
 @media only screen and (max-width: 900px) {
   .about-section {
+    height: 800px;
+    padding: 7% 0;
     grid-template-columns: 1fr;
   }
   .about-section__left h1::after {
@@ -923,11 +934,26 @@ footer .footer__copyright h3 {
     font-size: 14px;
     line-height: 1.6;
   }
+  .about-section__right {
+    width: calc(100% - 30px);
+    padding-left: 30px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
+  .about-section__right {
+    width: calc(100% - 10px);
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
   .about-section {
-    padding: 5% 10px;
+    height: 350px;
+  }
+  .about-section__right {
+    width: calc(100% - 10px);
+    padding-left: 10px;
   }
 }
 
