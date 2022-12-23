@@ -11,7 +11,6 @@ nav_menu.addEventListener('click', ()=>{
     nav_links.classList.toggle('active')
 })
 
-console.log(about_button);
 about_button.addEventListener('click', ()=>{
     mobile_about_hover.classList.toggle('open')
     nav_links.classList.toggle('open-nav__links')

@@ -671,7 +671,7 @@ a {
 
 @media (max-width: 1000px) {
   .program-course {
-    height: 700px;
+    height: 300px;
     gap: 50px;
   }
   .program-course__left {
@@ -690,6 +690,7 @@ a {
 @media (max-width: 800px) {
   .program-course {
     flex-direction: column;
+    height: 600px;
   }
   .program-course__left {
     width: 100%;

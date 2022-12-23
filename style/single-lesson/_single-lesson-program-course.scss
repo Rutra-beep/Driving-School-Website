@@ -82,7 +82,7 @@
 }
 @media (max-width: 1000px) {
     .program-course{
-        height: 700px;
+        height: 300px;
         gap: 50px;
 
         &__left{
@@ -103,6 +103,7 @@
 @media (max-width: 800px) {
     .program-course{
         flex-direction: column;
+        height: 600px;
 
         &__left{
             width: 100%;
