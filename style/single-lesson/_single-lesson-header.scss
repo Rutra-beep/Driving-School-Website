@@ -8,7 +8,6 @@
 
   display: flex;
   align-self: center;
-  justify-content: space-around;
   gap: 15%;
 
   &__logo {
@@ -262,6 +261,8 @@
   .nav {
     position: absolute;
     align-items: center;
+    justify-content:  center;
+
     &__links {
       background-color: white;
       position: absolute;

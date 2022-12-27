@@ -5,6 +5,10 @@ body {
   font-family: sans-serif;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 a {
   text-decoration: none;
   color: white;
